@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+span,
+textarea,
+select {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #bfd7e4;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 434px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  background: #293241;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750px;
+
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 391px;
+
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  font-weight: bold;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  margin-bottom: 0;
+  margin-top: 70px;
+
+  color: #ffffff;
+}
+
+header p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+
+  color: #ffffff;
+}
+
+h2 {
+  font-family: 'Staatliches', cursive;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 33px;
+  font-size: 24px;
+  line-height: 34px;
+
+  font-weight: normal;
+  margin: 0 auto;
+
+  color: #ffffff;
+
+  margin-top: 50px;
+}
+
+.info {
+  width: 750px;
+  height: 133px;
+
+  background: #f67669;
+  border-radius: 20px 20px 0 0;
+}
+
+form {
+  width: 750px;
+  height: 900px;
+  padding: 0 64px;
+
+  background: #ffffff;
+}
+
+fieldset {
+  border: none;
+  margin-top: 31px;
+}
+
+fieldset legend {
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  line-height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #253b51;
+
+  width: 100%;
+
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.col-2 {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-wrapper label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4e4958;
+
+  margin-top: 10px;
+  margin-bottom: 8px;
+
+  width: 300px;
+}
+
+.input-wrapper label span {
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 10px;
+
+  color: #c1bccc;
+}
+
+.input-wrapper label span:hover {
+  color: #807e86;
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+  background: #fafafc;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  appearance: none;
+
+  height: 56px;
+  padding: 0 24px;
+
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.input-wrapper select {
+  width: 300px;
+  padding: 0 30px;
+}
+
+.input-wrapper textarea {
+  padding: 5px;
+  height: 166px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  margin: 0;
+  gap: 10px;
+
+  margin-top: 28px;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  display: block;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 9px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='24' height='24' rx='8' fill='%23FAFAFC' stroke='%23E6E6F0'/%3E%3Cg clip-path='url(%23clip0_1309_18)'%3E%3Cpath d='M10 17.17L5.83 13L4.41 14.41L10 20L22 8L20.59 6.59L10 17.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1309_18'%3E%3Crect width='24' height='24' fill='white' transform='translate(1 1)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  outline: 2px solid black;
+}
+
+.col-3 {
+  display: flex;
+  gap: 14px;
+
+  width: 140px;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 300px;
+}
+
+footer {
+  background: #ffffff;
+
+  height: 136px;
+  width: 750px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 54px;
+
+  margin-bottom: 150px;
+
+  border-radius: 0 0 20px 20px;
+}
+
+footer .button {
+  height: 51px;
+
+  background: #f67669;
+  border: none;
+  border-radius: 8px;
+
+  color: #ffffff;
+
+  font-family: 'Staatliches', cursive;
+
+  font-size: 20px;
+  line-height: 26px;
+}
+
+footer .button:hover {
+  background: #db675a;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:invalid:focus {
+  border: 1px solid #ff1010;
+  animation: shake 0.2s 2;
+}
+
+@keyframes shake {
+  25% {
+    translate: 6px 0;
+  }
+  50% {
+    translate: -6px 0;
+  }
+  75% {
+    translate: 6px 0;
+  }
+}
